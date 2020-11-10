@@ -1,7 +1,7 @@
 #!/bin/sh
 
-player="CESAR_School_player"
-coach="CESAR_School_coach"
+player="cesar_player"
+coach="cesar_coach"
 
 killall -TERM ${player}
 killall -TERM ${coach}
