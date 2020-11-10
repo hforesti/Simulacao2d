@@ -172,7 +172,7 @@ TRAINERHEADERS = \
 	sample_trainer.h
 
 
-noinst_PROGRAMS = sample_player sample_coach sample_trainer
+noinst_PROGRAMS = cesar_player cesar_coach cesar_trainer
 
 noinst_DATA = \
 	start.sh.in \
@@ -224,24 +224,24 @@ noinst_DATA = \
 	formations-taker/setplay-opp-formation.conf \
 	formations-taker/setplay-our-formation.conf
 
-sample_player_SOURCES = \
+cesar_player_SOURCES = \
 	$(CHAINACTIONSOURCES) \
 	$(PLAYERSOURCES)
-sample_player_CXXFLAGS = -W -Wall
-sample_player_LDFLAGS =
-sample_player_LDADD =
+cesar_player_CXXFLAGS = -W -Wall
+cesar_player_LDFLAGS =
+cesar_player_LDADD =
 
-sample_coach_SOURCES = \
+cesar_coach_SOURCES = \
 	$(COACHSOURCES)
-sample_coach_CXXFLAGS = -W -Wall
-sample_coach_LDFLAGS =
-sample_coach_LDADD =
+cesar_coach_CXXFLAGS = -W -Wall
+cesar_coach_LDFLAGS =
+cesar_coach_LDADD =
 
-sample_trainer_SOURCES = \
+cesar_trainer_SOURCES = \
 	$(TRAINERSOURCES)
-sample_trainer_CXXFLAGS = -W -Wall
-sample_trainer_LDFLAGS =
-sample_trainer_LDADD =
+cesar_trainer_CXXFLAGS = -W -Wall
+cesar_trainer_LDFLAGS =
+cesar_trainer_LDADD =
 
 noinst_HEADERS = \
 	$(PLAYERHEADERS) \
